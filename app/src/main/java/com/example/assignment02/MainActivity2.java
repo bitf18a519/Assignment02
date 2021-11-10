@@ -42,6 +42,11 @@ public class MainActivity2 extends AppCompatActivity {
                     startActivity(intent);
 
                 }
+                else
+                {
+                    Intent intent=new Intent(MainActivity2.this,MainActivity.class);
+                    startActivity(intent);
+                }
             }
         });
 
@@ -58,6 +63,12 @@ public class MainActivity2 extends AppCompatActivity {
                     startActivity(intent);
 
                 }
+
+                else
+                {
+                    Intent intent=new Intent(MainActivity2.this,MainActivity.class);
+                    startActivity(intent);
+                }
             }
         });
 
@@ -73,6 +84,12 @@ public class MainActivity2 extends AppCompatActivity {
                     intent.putExtra("key",Arabic[number]);
                     startActivity(intent);
 
+                }
+
+                else
+                {
+                    Intent intent=new Intent(MainActivity2.this,MainActivity.class);
+                    startActivity(intent);
                 }
 
 
