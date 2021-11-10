@@ -31,45 +31,48 @@
             android:id="@+id/thoat"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="436dp"
-            android:text="Throat"
-            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginTop="148dp"
+            android:layout_marginBottom="265dp"
+            android:text="Halqiyah"
+            app:layout_constraintBottom_toTopOf="@+id/textView6"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.06"
+            app:layout_constraintHorizontal_bias="0.063"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textView"
-            app:layout_constraintVertical_bias="0.866" />
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.21" />
 
         <Button
             android:id="@+id/tongue"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="144dp"
-            android:text="Tongue"
+            android:layout_marginTop="156dp"
+            android:layout_marginBottom="269dp"
+            android:text="Lahatiyah"
+            app:layout_constraintBottom_toTopOf="@+id/textView4"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.89"
+            app:layout_constraintHorizontal_bias="0.917"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
         <Button
             android:id="@+id/lips"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="40dp"
-            android:text="Lips"
+            android:layout_width="102dp"
+            android:layout_height="55dp"
+            android:layout_marginTop="48dp"
+            android:text="Shajariyah- Haafiyah"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.08"
+            app:layout_constraintHorizontal_bias="0.085"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/thoat" />
 
         <Button
             android:id="@+id/nose"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="40dp"
-            android:text="Nose"
+            android:layout_width="120dp"
+            android:layout_height="45dp"
+            android:layout_marginTop="48dp"
+            android:text="Tarfiyah"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.87"
+            app:layout_constraintHorizontal_bias="0.925"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/tongue" />
 
@@ -78,36 +81,60 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="36dp"
-            android:text="Mouth"
+            android:text="Lisaveyah"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.062"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/nose"
-            app:layout_constraintVertical_bias="0.055" />
+            app:layout_constraintVertical_bias="0.058" />
 
         <TextView
             android:id="@+id/Result"
             android:layout_width="80dp"
             android:layout_height="39dp"
             android:layout_marginEnd="29dp"
-            android:layout_marginBottom="160dp"
+            android:layout_marginBottom="92dp"
             android:hint="0"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.777"
-            app:layout_constraintStart_toEndOf="@+id/mouth" />
+            app:layout_constraintHorizontal_bias="0.991"
+            app:layout_constraintStart_toEndOf="@+id/mouth"
+            app:layout_constraintTop_toBottomOf="@+id/ghunna"
+            app:layout_constraintVertical_bias="1.0" />
 
         <TextView
             android:id="@+id/textView6"
             android:layout_width="80dp"
             android:layout_height="38dp"
             android:layout_marginEnd="148dp"
-            android:layout_marginBottom="160dp"
+            android:layout_marginBottom="92dp"
             android:text="Score"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toStartOf="@+id/Result"
             app:layout_constraintTop_toBottomOf="@+id/mouth"
-            app:layout_constraintVertical_bias="1.0" />
+            app:layout_constraintVertical_bias="0.99" />
+
+        <Button
+            android:id="@+id/ghunna"
+            android:layout_width="113dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="100dp"
+            android:layout_marginTop="48dp"
+            android:text="Ghunna"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/mouth"
+            app:layout_constraintTop_toBottomOf="@+id/nose" />
+
+        <Button
+            android:id="@+id/Nit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nit-eeyah"
+            app:layout_constraintEnd_toStartOf="@+id/ghunna"
+            app:layout_constraintStart_toEndOf="@+id/mouth"
+            tools:layout_editor_absoluteY="431dp" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -15,7 +15,7 @@ public class MainActivity2 extends AppCompatActivity {
     TextView text,result;
     Button throat,tongue,mouth,lips,nose;
     Random num =new Random();
-    String []Arabic={"ا","ب","ث","ج","ح","خ","ت","د","ذ","ر","ز","س","ش","ص","ض","ط","ظ","ع","ف","ق","ل","م","ن","ك","ه","و","ي","غ"};
+    String []Arabic={"ا","ب","ث","ج","ح","خ","ت","د","ذ","ر","ز","س","ش","ص","ض","ط","ظ","ع","ف","ق","ل","م","ن","ک","ه","و","ي","غ"};
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -38,6 +38,22 @@ public class MainActivity2 extends AppCompatActivity {
                 if(Arabic[number].equals("ا") || Arabic[number].equals("ه") || Arabic[number].equals("ع") || Arabic[number].equals("ح") || Arabic[number].equals("غ") || Arabic[number].equals("خ") )
                 {
                     Intent intent=new Intent(MainActivity2.this,MainActivity3.class);
+                    intent.putExtra("key",Arabic[number]);
+                    startActivity(intent);
+
+                }
+            }
+        });
+
+
+        tongue=findViewById(R.id.tongue);
+        tongue.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                if(Arabic[number].equals("ق") || Arabic[number].equals("ک")  )
+                {
+                    Intent intent=new Intent(MainActivity2.this,MainActivity4.class);
                     intent.putExtra("key",Arabic[number]);
                     startActivity(intent);
 
