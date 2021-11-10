@@ -10,11 +10,13 @@
         android:id="@+id/Start"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="208dp"
         android:layout_marginEnd="8dp"
-        android:layout_marginBottom="56dp"
+        android:layout_marginBottom="255dp"
         android:text="Start of thr Throat"
-        app:layout_constraintBottom_toTopOf="@+id/Middle"
-        app:layout_constraintEnd_toEndOf="@+id/Middle" />
+        app:layout_constraintBottom_toTopOf="@+id/textView3"
+        app:layout_constraintEnd_toEndOf="@+id/Middle"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/Middle"
@@ -35,4 +37,15 @@
         android:text="End of Throat"
         app:layout_constraintStart_toStartOf="@+id/Middle"
         app:layout_constraintTop_toBottomOf="@+id/Middle" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="123dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="173dp"
+        android:hint="Result"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Start" />
 </androidx.constraintlayout.widget.ConstraintLayout>
