@@ -2,6 +2,7 @@ package com.example.assignment02;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -30,6 +31,12 @@ public class MainActivity2 extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
+                if(Arabic[number].equals("ا") || Arabic[number].equals("ه") || Arabic[number].equals("ع") || Arabic[number].equals("ح") || Arabic[number].equals("غ") || Arabic[number].equals("خ") )
+                {
+                    Intent intent=new Intent(MainActivity2.this,MainActivity3.class);
+                    startActivity(intent);
+
+                }
             }
         });
 
