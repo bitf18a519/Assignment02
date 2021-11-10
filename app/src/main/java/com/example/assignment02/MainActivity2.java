@@ -115,5 +115,23 @@ public class MainActivity2 extends AppCompatActivity {
         });
 
 
+        nose=findViewById(R.id.mouth);
+        nose.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                if(Arabic[number].equals("ت") || Arabic[number].equals("د") || Arabic[number].equals("ط")  )
+                {
+                    Intent intent=new Intent(MainActivity2.this,MainActivity7.class);
+                    intent.putExtra("key",Arabic[number]);
+                    startActivity(intent);
+
+                }
+
+
+            }
+        });
+
+
     }
 }

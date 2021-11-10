@@ -43,7 +43,7 @@ public class MainActivity5 extends AppCompatActivity {
         });
 
 
-        b2.findViewById(R.id.R62);
+        b2=findViewById(R.id.R62);
         b2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

@@ -48,7 +48,6 @@
             android:layout_marginTop="156dp"
             android:layout_marginBottom="269dp"
             android:text="Lahatiyah"
-            app:layout_constraintBottom_toTopOf="@+id/textView4"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.917"
             app:layout_constraintStart_toStartOf="parent"
@@ -68,7 +67,7 @@
         <Button
             android:id="@+id/nose"
             android:layout_width="120dp"
-            android:layout_height="45dp"
+            android:layout_height="48dp"
             android:layout_marginTop="48dp"
             android:text="Tarfiyah"
             app:layout_constraintEnd_toEndOf="parent"
@@ -118,7 +117,7 @@
         <Button
             android:id="@+id/ghunna"
             android:layout_width="110dp"
-            android:layout_height="41dp"
+            android:layout_height="48dp"
             android:layout_marginStart="100dp"
             android:layout_marginTop="52dp"
             android:text="Ghunna"
