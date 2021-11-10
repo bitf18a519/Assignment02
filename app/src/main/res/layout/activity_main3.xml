@@ -6,4 +6,33 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity3">
 
+    <Button
+        android:id="@+id/Start"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="56dp"
+        android:text="Start of thr Throat"
+        app:layout_constraintBottom_toTopOf="@+id/Middle"
+        app:layout_constraintEnd_toEndOf="@+id/Middle" />
+
+    <Button
+        android:id="@+id/Middle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="96dp"
+        android:layout_marginTop="312dp"
+        android:text="Middle of the throat"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/end"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="56dp"
+        android:text="End of Throat"
+        app:layout_constraintStart_toStartOf="@+id/Middle"
+        app:layout_constraintTop_toBottomOf="@+id/Middle" />
 </androidx.constraintlayout.widget.ConstraintLayout>
