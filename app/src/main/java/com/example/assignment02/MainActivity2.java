@@ -62,5 +62,23 @@ public class MainActivity2 extends AppCompatActivity {
         });
 
 
+        lips=findViewById(R.id.lips);
+        lips.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                if(Arabic[number].equals("ي") || Arabic[number].equals("ج") || Arabic[number].equals("ش") || Arabic[number].equals("ض")  )
+                {
+                    Intent intent=new Intent(MainActivity2.this,MainActivity5.class);
+                    intent.putExtra("key",Arabic[number]);
+                    startActivity(intent);
+
+                }
+
+
+            }
+        });
+
+
     }
 }

@@ -33,6 +33,12 @@ public class MainActivity3 extends AppCompatActivity {
                     startActivity(intent);
 
                 }
+
+                else
+                {
+                    intent=new Intent(MainActivity3.this,MainActivity2.class);
+                    startActivity(intent);
+                }
             }
         });
 
@@ -45,6 +51,12 @@ public class MainActivity3 extends AppCompatActivity {
                 if(letter.equals("ع") || letter.equals("ح"))
                 {
                     globalV.gnum++;
+                    intent=new Intent(MainActivity3.this,MainActivity2.class);
+                    startActivity(intent);
+                }
+
+                else
+                {
                     intent=new Intent(MainActivity3.this,MainActivity2.class);
                     startActivity(intent);
                 }
@@ -63,6 +75,11 @@ public class MainActivity3 extends AppCompatActivity {
                     startActivity(intent);
                 }
 
+                else
+                {
+                    intent=new Intent(MainActivity3.this,MainActivity2.class);
+                    startActivity(intent);
+                }
 
             }
         });

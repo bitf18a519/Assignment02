@@ -6,4 +6,27 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity4">
 
+    <Button
+        android:id="@+id/a41"
+        android:layout_width="239dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="247dp"
+        android:layout_marginBottom="45dp"
+        android:text="Base of Tongue which is near Uvula  touching the mouth roof"
+        app:layout_constraintBottom_toTopOf="@+id/a42"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/a42"
+        android:layout_width="237dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="259dp"
+        android:text="Portion of Tongue near its base touching the roof of mouth"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/a41" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
