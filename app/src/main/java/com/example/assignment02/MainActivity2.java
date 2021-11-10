@@ -80,7 +80,7 @@ public class MainActivity2 extends AppCompatActivity {
 
                 if(Arabic[number].equals(Arabic[26]) || Arabic[number].equals(Arabic[3]) || Arabic[number].equals(Arabic[12]) || Arabic[number].equals(Arabic[14])  )
                 {
-                    Intent intent=new Intent(MainActivity2.this,MainActivity5.class);
+                    Intent intent=new Intent(MainActivity2.this,MainActivity6.class);
                     intent.putExtra("key",Arabic[number]);
                     startActivity(intent);
 
