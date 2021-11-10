@@ -1,7 +1,10 @@
 package com.example.assignment02;
 
+import static java.util.logging.Logger.global;
+
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -9,8 +12,7 @@ import android.widget.TextView;
 
 public class MainActivity3 extends AppCompatActivity {
     Button start,middle,End;
-    TextView text;
-
+    Intent intent;
 
 
     @Override
@@ -20,19 +22,16 @@ public class MainActivity3 extends AppCompatActivity {
         setContentView(R.layout.activity_main3);
         String letter=getIntent().getStringExtra("key");
 
-        text=findViewById(R.id.textView3);
         start=findViewById(R.id.Start);
         start.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 if(letter.equals("ا") || letter.equals("ه")) {
 
-                    text.setText("True");
+                    globalV.gnum++;
+                    intent=new Intent(MainActivity3.this,MainActivity2.class);
+                    startActivity(intent);
 
-                }
-                else
-                {
-                    text.setText("False");
                 }
             }
         });
@@ -45,12 +44,9 @@ public class MainActivity3 extends AppCompatActivity {
 
                 if(letter.equals("ع") || letter.equals("ح"))
                 {
-                    text.setText("True");
-                }
-
-                else
-                {
-                    text.setText("False");
+                    globalV.gnum++;
+                    intent=new Intent(MainActivity3.this,MainActivity2.class);
+                    startActivity(intent);
                 }
             }
         });
@@ -62,12 +58,9 @@ public class MainActivity3 extends AppCompatActivity {
 
                 if(letter.equals("غ") || letter.equals("خ"))
                 {
-                    text.setText("True");
-                }
-
-                else
-                {
-                    text.setText("False");
+                    globalV.gnum++;
+                    intent=new Intent(MainActivity3.this,MainActivity2.class);
+                    startActivity(intent);
                 }
 
 
