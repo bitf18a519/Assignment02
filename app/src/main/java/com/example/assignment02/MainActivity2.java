@@ -18,7 +18,9 @@ public class MainActivity2 extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main2);
 
-
+        int number= num.nextInt(28);
+        text=findViewById(R.id.textView);
+        text.setText(Arabic[number]);
 
 
 
