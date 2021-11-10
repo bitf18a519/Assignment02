@@ -3,6 +3,8 @@ package com.example.assignment02;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
 import android.widget.TextView;
 
 import java.util.Random;
@@ -10,6 +12,7 @@ import java.util.Random;
 public class MainActivity2 extends AppCompatActivity {
 
     TextView text;
+    Button throat,tongue,mouth,lips,nose;
     Random num =new Random();
     String []Arabic={"ا","ب","ث","ج","ح","خ","ت","د","ذ","ر","ز","س","ش","ص","ض","ط","ظ","ع","ف","ق","ل","م","ن","ك","ه","و","ي","غ"};
 
@@ -22,7 +25,13 @@ public class MainActivity2 extends AppCompatActivity {
         text=findViewById(R.id.textView);
         text.setText(Arabic[number]);
 
+        throat=findViewById(R.id.thoat);
+        throat.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
 
+            }
+        });
 
 
     }
