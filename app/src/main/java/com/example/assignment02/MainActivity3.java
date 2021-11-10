@@ -26,7 +26,7 @@ public class MainActivity3 extends AppCompatActivity {
         start.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if(letter.equals("ا") || letter.equals("ه")) {
+                if(letter.equals("غ") || letter.equals("خ")) {
 
                     globalV.gnum++;
                     intent=new Intent(MainActivity3.this,MainActivity2.class);
@@ -56,7 +56,7 @@ public class MainActivity3 extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
-                if(letter.equals("غ") || letter.equals("خ"))
+                if(letter.equals("ا") || letter.equals("ه"))
                 {
                     globalV.gnum++;
                     intent=new Intent(MainActivity3.this,MainActivity2.class);

@@ -12,7 +12,7 @@ import java.util.Random;
 
 public class MainActivity2 extends AppCompatActivity {
 
-    TextView text;
+    TextView text,result;
     Button throat,tongue,mouth,lips,nose;
     Random num =new Random();
     String []Arabic={"ا","ب","ث","ج","ح","خ","ت","د","ذ","ر","ز","س","ش","ص","ض","ط","ظ","ع","ف","ق","ل","م","ن","ك","ه","و","ي","غ"};
@@ -25,6 +25,10 @@ public class MainActivity2 extends AppCompatActivity {
         int number= num.nextInt(28);
         text=findViewById(R.id.textView);
         text.setText(Arabic[number]);
+
+        String num= String.valueOf(globalV.gnum);
+        result=findViewById(R.id.Result);
+        result.setText(num);
 
         throat=findViewById(R.id.thoat);
         throat.setOnClickListener(new View.OnClickListener() {

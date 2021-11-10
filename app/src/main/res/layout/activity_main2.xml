@@ -7,8 +7,15 @@
     tools:context=".MainActivity2">
 
     <androidx.constraintlayout.widget.ConstraintLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:id="@+id/constraintLayout"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
         tools:context=".MainActivity">
 
         <TextView
@@ -77,6 +84,30 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/nose"
             app:layout_constraintVertical_bias="0.055" />
+
+        <TextView
+            android:id="@+id/Result"
+            android:layout_width="80dp"
+            android:layout_height="39dp"
+            android:layout_marginEnd="29dp"
+            android:layout_marginBottom="160dp"
+            android:hint="0"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.777"
+            app:layout_constraintStart_toEndOf="@+id/mouth" />
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="80dp"
+            android:layout_height="38dp"
+            android:layout_marginEnd="148dp"
+            android:layout_marginBottom="160dp"
+            android:text="Score"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/Result"
+            app:layout_constraintTop_toBottomOf="@+id/mouth"
+            app:layout_constraintVertical_bias="1.0" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
