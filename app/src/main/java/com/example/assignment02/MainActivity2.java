@@ -13,7 +13,7 @@ import java.util.Random;
 public class MainActivity2 extends AppCompatActivity {
 
     TextView text,result;
-    Button throat,tongu,mouth,lips,nose;
+    Button throat,tongu,mouth,lips,nose,nit;
     Random num =new Random();
     String []Arabic={"ا","ب","ث","ج","ح","خ","ت","د","ذ","ر","ز","س","ش","ص","ض","ط","ظ","ع","ف","ق","ل","م","ن","ک","ه","و","ي","غ"};
 
@@ -110,12 +110,18 @@ public class MainActivity2 extends AppCompatActivity {
 
                 }
 
+                else
+                {
+                    Intent intent=new Intent(MainActivity2.this,MainActivity.class);
+                    startActivity(intent);
+                }
+
 
             }
         });
 
 
-        nose=findViewById(R.id.mouth);
+        nose=findViewById(R.id.Nit);
         nose.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -128,10 +134,38 @@ public class MainActivity2 extends AppCompatActivity {
 
                 }
 
+                else
+                {
+                    Intent intent=new Intent(MainActivity2.this,MainActivity.class);
+                    startActivity(intent);
+                }
 
             }
         });
 
 
+        nit=findViewById(R.id.mouth);
+        nit.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+
+                if(Arabic[number].equals("ظ") || Arabic[number].equals("ذ") || Arabic[number].equals("ث") || Arabic[number].equals("ص") || Arabic[number].equals("ز") || Arabic[number].equals("س")  )
+                {
+                    Intent intent=new Intent(MainActivity2.this,MainActivity7.class);
+                    intent.putExtra("key",Arabic[number]);
+                    startActivity(intent);
+
+                }
+
+                else
+                {
+                    Intent intent=new Intent(MainActivity2.this,MainActivity.class);
+                    startActivity(intent);
+                }
+
+
+            }
+        });
     }
 }
