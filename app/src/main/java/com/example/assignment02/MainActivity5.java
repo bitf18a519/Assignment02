@@ -20,7 +20,7 @@ public class MainActivity5 extends AppCompatActivity {
         String letter=getIntent().getStringExtra("key");
 
 
-        b1=findViewById(R.id.R51);
+        b1=findViewById(R.id.R61);
         b1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v)
@@ -43,7 +43,7 @@ public class MainActivity5 extends AppCompatActivity {
         });
 
 
-        b2.findViewById(R.id.R52);
+        b2.findViewById(R.id.R62);
         b2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
