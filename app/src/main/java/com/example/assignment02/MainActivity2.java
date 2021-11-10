@@ -13,7 +13,7 @@ import java.util.Random;
 public class MainActivity2 extends AppCompatActivity {
 
     TextView text,result;
-    Button throat,tongu,mouth,lips,nose,nit;
+    Button throat,tongu,mouth,lips,nose,nit,b6;
     Random num =new Random();
     String []Arabic={"ا","ب","ث","ج","ح","خ","ت","د","ذ","ر","ز","س","ش","ص","ض","ط","ظ","ع","ف","ق","ل","م","ن","ک","ه","و","ي","غ"};
 
@@ -166,6 +166,12 @@ public class MainActivity2 extends AppCompatActivity {
 
 
             }
+
         });
+
+
+
+
+
     }
 }
