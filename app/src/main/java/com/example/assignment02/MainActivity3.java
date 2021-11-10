@@ -10,12 +10,15 @@ import android.widget.TextView;
 public class MainActivity3 extends AppCompatActivity {
     Button start,middle,End;
     TextView text;
-    String letter=getIntent().getStringExtra("key");
+
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
         setContentView(R.layout.activity_main3);
+        String letter=getIntent().getStringExtra("key");
 
         text=findViewById(R.id.textView3);
         start=findViewById(R.id.Start);

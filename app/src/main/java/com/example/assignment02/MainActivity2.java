@@ -34,6 +34,7 @@ public class MainActivity2 extends AppCompatActivity {
                 if(Arabic[number].equals("ا") || Arabic[number].equals("ه") || Arabic[number].equals("ع") || Arabic[number].equals("ح") || Arabic[number].equals("غ") || Arabic[number].equals("خ") )
                 {
                     Intent intent=new Intent(MainActivity2.this,MainActivity3.class);
+                    intent.putExtra("key",Arabic[number]);
                     startActivity(intent);
 
                 }
